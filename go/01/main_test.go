@@ -37,3 +37,12 @@ func TestMultiplesOf3and5(t *testing.T) {
 		t.Errorf("Expected %d got %d", expected, results)
 	}
 }
+
+func TestFancy(t *testing.T) {
+	fmt.Println("Testing fancy")
+	results := Fancy(1000)
+	expected := 233168
+	if results != expected {
+		t.Errorf("Expected %d got %d", expected, results)
+	}
+}
