@@ -1,6 +1,8 @@
 package main
 
-import "testing"
+import (
+	"testing"
+)
 
 const (
 	TestFunc      = "largestPalindromeProduct"
@@ -23,5 +25,11 @@ func TestLargestPalindromeProduct(t *testing.T) {
 		if got := largestPalindromeProduct(test.input); got != test.want {
 			t.Errorf(ColorPrint, test.input, got, test.want)
 		}
+	}
+}
+
+func BenchmarkIsPalindrome(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		isPalindrome(b.N)
 	}
 }
