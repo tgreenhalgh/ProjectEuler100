@@ -31,5 +31,5 @@ func largestPrimeFactor(x int) int {
 }
 
 func main() {
-	fmt.Println(largestPrimeFactor(0))
+	fmt.Println(largestPrimeFactor(13195))
 }
