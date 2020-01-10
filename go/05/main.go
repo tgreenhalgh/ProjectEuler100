@@ -37,6 +37,7 @@ func smallestMult(n int) int {
 	product := 1
 	primes := sieveOfEratosthenes(n)
 
+	// take out all the prime factors
 	for _, v := range primes {
 		t := 1
 		for t <= n/v {
